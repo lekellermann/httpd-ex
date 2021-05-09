@@ -1,0 +1,231 @@
+body{
+    background-color: #f1f1f1;
+}
+#resumeContainer{
+    max-width: 1200px;
+    background-color: #ffffff;
+    margin: 0px auto 0px;
+    margin-top:50px;
+    padding: 60px;
+    overflow: hidden;
+}
+#headerContainer{
+    margin-bottom: 65px;
+    height: 20%;
+}
+img{
+    border-radius: 50%;
+    position: relative;
+    top: -7px;
+    left: 25px;
+}
+#nameAndInfo{
+    margin-bottom: 5px;
+    position: relative;
+    top:-185px;
+    height: 100%;
+}
+#name{
+    font-size: 45;
+    text-transform: uppercase;
+    font-family: sans-serif, monospace;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    left: 245px;
+    width: 31%;
+}
+ul#profileList {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+#lastName{
+    color: #bd2509
+}
+#jobTitle{
+    color:black;
+    font-size:30;
+    font-family:'Lucida Sans' , monospace;
+    font-weight: 700;
+}
+#infoContainer{
+  margin-bottom: 10px;
+  position: relative;
+  top: -200px;
+}
+.info{
+    font-family:sans-serif, monospace;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.resumeContent{
+    line-height: 25px;
+}
+.resumeSection{
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+/* .sectionTitle{
+    margin-bottom: 25px;
+} */
+.leftColumn{
+    clear:both;
+    width:15%;
+    float: left;
+    position: relative;
+    top: -20px;
+}
+.profileHeader
+{
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.rightColumn {
+    width:60%;
+    padding-right:30px;
+    position: relative;
+    float: right; 
+    right: 200px;
+  }
+  .dividers{
+    width: 135%;
+    height: 7.5px;
+    background-color: #bd2509 
+}
+.content{
+    position: relative;
+    top: -15px;
+}
+.position{
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: right;
+    color: #bd2509;
+    margin-top: 0px;
+}
+.experienceContainer{
+    margin-bottom: 15px;
+}
+.experienceContent{
+    margin-bottom: 15px;
+}
+.company{
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: -20px;
+}
+.jobDescription{
+    position: relative;
+    top: -25px;
+    margin-top: 5px;
+    padding-left: 18px;
+}
+.softSkill{
+    font-weight: bold;
+    font-size: 20px;
+}
+.skillsContainer{
+    margin-bottom: 15px;
+    position: relative;
+    top: 5px;
+}
+.skillsDescription{
+    margin-top: 5px;
+    padding-left: 18px;
+    width: max-content;
+}
+.skillsContent{
+    margin-bottom: 15px;
+    width:fit-content;
+    float: left;
+    margin-right: 65px;
+}
+.techSkillsContent{
+    margin-bottom: 45px;
+    width:15%;
+    float: left;
+    margin-right: 30px;
+}
+.techskillsDescription{
+    margin-top: 5px;
+    padding-left: 18px;
+}
+.techSkillsrightColumn {
+    padding-right:-25px;
+    position: relative;
+    float: right; 
+    left: -60px;
+  }
+  .techSkill{
+    font-weight: bold;
+    font-size: 20px;
+}
+.educationContainer, .educationContent{
+    margin-bottom: 15px;
+}
+.degree{
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: right;
+    color: #bd2509;
+}
+.college{
+    font-weight: bold;
+    font-size: 20px;
+}
+.referenceContainer{
+    margin-bottom: 15px;
+}
+.referenceHeader{
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: right;
+    color: #bd2509;
+}
+.referenceContent{
+    margin-bottom: 15px;
+    position: relative;
+    top: -3px;
+}
+.referenceName{
+    font-weight: 300;
+    font-size: 20px;
+}
+.referenceRelationship{
+    font-weight: bold;
+    font-size: 20px;
+}
+.referenceInfoContainer{
+    font-weight: bold;
+    font-size: 20px;
+}
+.referenceContact{
+    font-weight: 250;
+    font-size: 20px;
+}
+.topBanner {
+    width: 110%;
+    position: relative;
+    height: 25px;
+    background-color: #bd2509;
+    top: -60px;
+    left: -60px;
+}
+.bottomBanner {
+    width: 110%;
+    position: relative;
+    height: 25px;
+    background-color: #bd2509;
+    top: 60px;
+    left: -60px;
+}

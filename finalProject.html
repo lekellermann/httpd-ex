@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <title>WEB-115 Final Project</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+    #banner{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, #bd2509 0%, #ffffff 100%);
+        color: black;
+        font-size: 30px;
+        width: 100%;
+    }
+    
+    body{
+        background-color: #f1f1f1;
+    }
+
+    #formCategory{
+        text-align: center;
+    }
+    
+    #resumeForm{
+        background-color: #ffffff;
+        margin: 0 auto; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif, monospace;
+        width: 50%;
+        position: relative;
+        top: 315px;
+        padding: 75px;
+    }
+    .formSection
+    {
+        padding-bottom: 75px;
+    } 
+ 
+    #education , #jobBox, #profile{
+        padding-bottom: 75px;
+    }
+    input {
+        padding: 10px;
+        width: 90%;
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif, monospace;
+        border: 1px solid #aaaaaa;
+    }
+
+    textarea{
+        float: left;
+        width: 100%;
+        min-height: 75px;
+        outline: none;
+        resize: none;
+        border: 1px solid grey;
+    }
+
+    #Job, #references{
+        position: relative;
+        top: 25px;
+        padding-bottom: 10px ;
+        left: 0;
+    }
+    .startDate, .endDate, #jobInput, .schoolDates{
+        width:40%;
+    }
+    #headshot{
+        width:19%;
+        border: none;
+    }
+    #createResume {
+    float: right;
+    width: auto;
+    background-color: #bd2509;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 15px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#createResume:active {
+    transform: translateY(4px);
+}
+</style>
+</head>
+<body>
+    <div id="banner">
+        <h1>Luis Kellermann</h1>
+        <p>Web-115 Section .0003<br/>Build Your Resume</p> 
+    </div>
+
+    <form id="resumeForm" name="resumeForm">
+    <form id=resumeForm name="resumeForm">
+
+        <h1 id="formCategory">Personal Information</h1>
+        <!-- Personal information step of the form-->
+        <div class="formSection">
+            <p>
+                <label for="headshot">Upload a professional headshot if available:</label><br/>
+                <input type="file" id="headshot" accept="image/png, image/jpeg" name="headshot">
+            </p>
+            <p>
+                <label for="lastName">Enter Your First Name:</label><br/>
+                <input type="text" placeholder="John..." name="firstName">
+            </p>
+            <p>
+                <label for="lastName">Enter Your Last Name:</label><br/>
+                <input type="text" placeholder="Doe..." name="lastName">
+            </p>
+            <p>
+                <label for="title">Enter your Job titlle:</label><br/>
+                <input type="text" placeholder="Fullstack Software Engineer, Software Engineer, Front-end Engineer, etc..." name="title">
+            </p>
+
+            <p>
+                <label for="city">Enter Your City:</label><br/>
+                <input type="text" placeholder="City Name here..." name="city">
+            </p>
+            <p>
+                <label for="state">Enter Your State:</label><br/>
+                <input type="text" placeholder="State Name here..." name="state">
+            </p>
+            <p>
+                <label for="zipcode">Enter your Zip Code:</label><br/>
+                <input type="text" placeholder="Zip Code here..." name="zipcode">
+            </p>
+            <p>
+                <label for="phoneNumber">Enter Your Phone Number:</label><br/>
+                <input type="tel" placeholder="919-123-4567" name="phoneNumber">
+            </p>
+            <p>
+                <label for="email">Enter your email:</label><br/>
+                <input type="email" placeholder="example@gmail.com" name="email">
+                <p id="emailAddress"></p>
+            </p>
+            <p>
+                <label for="socialsLink">Enter link to LinkedIn Profile:</label><br/>
+                <input placeholder="linked.com/in/profile" name="socialsLink">
+            </p>
+            <p>
+                <label for="portfolioLink">Enter Link to portfolio site:</label><br/>
+                <input placeholder="myPortfolioSite.com" name="portfolioLink">
+            </p>
+        </div>
+        <!-- Developer Profile Step of the form-->
+        <h1 id="formCategory">Developer Profile</h1>
+        <div class="formSection">
+            <p id="profile">
+                <label for="developerProfile">Give a brief overview of yourself as a developer, including some of your strength:</label><br/>
+                <textarea placeholder="Web Developer able to.., Skilled in..., Proficient in..." rows="6" name="developerProfile" form=resumeForm></textarea>
+            </p>
+        </div>
+        <!--Key Skills step of the form-->
+        <h1 id="formCategory">Key Skills</h1>
+        <div class="formSection">
+            <p>
+                <label for="softSkills">Enter any work related "Soft Skills:"</label><br/>
+                <input type="text" placeholder="Leadership, Mentorship, Collaboration, etc.." name="softSkills">
+            </p>
+            <p>
+                <label for="brandingSkills">Enter any branding related Skills:</label>
+                <input type="text" placeholder="Brand Mgmt., advertising, communication, etc..." name="brandingSkills">
+            </p>
+            <p>
+                <label for="skillsetChoice">Enter a skillset of your choice</label>
+                <input type="text" placeholder="Spoken Languages, Fast and motivated Learner, Web Dev Best Practices, etc..." name="skillsetChoice">
+            </p>
+        </div>
+        <!-- Technical Skills step of the form-->
+        <h1 id="formCategory">Technical Skills</h1>
+        <div class="formSection">
+            <p>
+                <label for="programmingLanguages">Enter any Programming Languages you have experience with:</label><br/>
+                <input type="text" placeholder="HTML, Ruby, Java, JavaScript, Python, PHP, CSS, NodeJS, JSON, etc..." name="programmingLanguages">
+            </p>
+            <p>
+                <label for="frameworks">Enter any front-end and back-end frameworks you have experience with:</label><br/>
+                <input type="text" placeholder="Bootstrap, React, .NET frameworks, JQuery, Django, Spring, ExpressJs, etc.." name="frameworks">
+            </p>
+            <p>
+                <label for="softwareTools">Enter any Software Development Tools you have worked with:</label>
+                <input type="text" placeholder="Git/Github, Apache, Postman, Well known Public APIs, API Design, Docker, etc..." name="softwareTools">
+            </p>
+            <p>
+                <label for="softwareMethedologies">Enter any software Development Methedologies or Architectural Styles you have expereicne with:</label>
+                <input type="text" placeholder="Agile, Waterfall, SCRUM, CRUD, REST, SOAP etc..." name="softwareMethedologies">
+            </p>
+        </div>
+        <!-- Education step of the form-->
+        <h1 id="formCategory">Educational Background</h1>
+        <div class="formSection">
+            <p>
+                <label for="educationDates">Start Date:</label><br/>
+                <input class="schoolDates"type="Date" name="educationDates">
+            </p>
+            <p>
+                <label for="educationDates">End Date:</label><br/>
+                <input class="schoolDates"type="Date" name="educationDates">
+            </p>
+            <p id="education">
+                <label for="education">Enter details relating to your Educational Background:</label><br/>
+                <textarea placeholder="Format(comma separated): Degree Earned, School Attended." rows="6" name="education" form=resumeForm></textarea>
+            </p>
+        </div>
+        <!-- Work Expereicne step of the form -->
+        <h1 id="formCategory">Work Experience</h1>
+        <div class="formSection">
+            <h2 id="Job">Most Recent Job</h2>
+            <p>
+                <label for="job1startDate">Start Date:</label><br/>
+                <input class="startDate"type="Date" name="job1startDate">
+            </p>
+            <p>
+                <label for="job1endDate">End Date:</label><br/>
+                <input class="endDate"type="Date" name="job2endDate">
+            </p>
+            <p>
+                <label for="company1">Company:</label><br/>
+                <input id="jobInput" placeholder="Company" rows="6" name="company1" form=resumeForm></input>
+            </p>
+            <p>
+                <label for="position1">Position:</label><br/>
+                <input id="jobInput" placeholder="Junior Web Dev., Senior Web Dev, etc..." rows="6" name="position1" form=resumeForm></input>
+            </p>
+            <p>
+                <label for="jobDescription1">Position Description:</label><br/>
+                <textarea placeholder="Breif Description, including roles and responsibilities" rows="6" name="jobDescription1" form=resumeForm></textarea>
+            </p>
+
+            <h2 id="Job">Previous Job</h2>
+            <p>
+                <label for="job2startDate">Start Date:</label><br/>
+                <input class="startDate"type="Date" name="job2startDate">
+            </p>
+            <p>
+                <label for="job2endDate">End Date:</label><br/>
+                <input class="endDate"type="Date" name="job2endDate">
+            </p>
+            <p>
+                <label for="company2">Company:</label><br/>
+                <input id="jobInput" placeholder="Company" rows="6" name="company2" form=resumeForm></input>
+            </p>
+            <p>
+                <label for="position2">Position:</label><br/>
+                <input id="jobInput" placeholder="Junior Web Dev., Senior Web Dev, etc..." rows="6" name="position2" form=resumeForm></input>
+            </p>
+            <p>
+                <label for="jobDescription2">Position Description:</label><br/>
+                <textarea placeholder="Company, Position, Role/Responsibilities" rows="6" name="jobDescription2" form=resumeForm></textarea>
+            </p>
+            
+            <h2 id="Job">Previous Job</h2>
+            <p>
+                <label for="job3startDate">Start Date:</label><br/>
+                <input class="startDate"type="Date" name="job3startDate">
+            </p>
+            <p>
+                <label for="job3endDate">End Date:</label><br/>
+                <input class="endDate"type="Date" name="job3endDate">
+            </p>
+            <p>
+                <label for="company3">Company:</label><br/>
+                <input id="jobInput" placeholder="Company" rows="6" name="company3" form=resumeForm></input>
+            </p>
+            <p>
+                <label for="position3">Position:</label><br/>
+                <input id="jobInput" placeholder="Junior Web Dev., Senior Web Dev, etc..." rows="6" name="position3" form=resumeForm></input>
+            </p>
+            <p id="jobBox">
+                <label for="jobDescription3">Position Description:</label><br/>
+                <textarea placeholder="Company, Position, Role/Responsibilities" rows="6" name="jobDescription3" form=resumeForm></textarea>
+            </p>
+        </div>
+        <!-- Business References step of the form -->
+        <h1 id="formCategory">References</h1>
+        <div class="formSection">
+            <p>
+                <h2 id="references">Reference #1</h2>
+                <label for="refernce1"></label><br/>
+                <textarea placeholder="(comma separated) Name, Professional Relationship, Contact information(phone number)" rows="6" name="reference1" form=resumeForm></textarea>
+            </p>
+
+            <p>
+                <label for="refernce2">
+                    <h2 id="references">Reference #2</h2>
+                </label>
+                <textarea placeholder="(comma separated) Name,Professional Relationship, Contact information(phone number)" rows="6" name="reference2" form=resumeForm></textarea>
+            </p>
+
+            <p>
+                <label for="refernce3">
+                    <h2 id="references">Reference #3</h2>
+                </label><br/>
+                <textarea placeholder="(comma separated) Name,Professional Relationship, Contact information(phone number)" rows="6" name="reference3" form=resumeForm></textarea>
+            </p>
+        </div>
+        <p>
+            <input type="button" id="createResume" value="Create Resume">
+        </p>
+    </form>
+    <script src="projectJS.js">
+    </script>
+
+    
+</body>
+
+</html>
